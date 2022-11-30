@@ -1,0 +1,27 @@
+.minicart-counter-container {
+  height: 100%;
+  grid-area: 1/2 / span 1 / span 1;
+  justify-self: center;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.minicart-product-counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.minicart-counter-button {
+  cursor: pointer;
+  align-self: center;
+  justify-self: center;
+}
+
+.minicart-counter-button:hover {
+  background-color: rgba(0, 0, 0, 0.068);
+}

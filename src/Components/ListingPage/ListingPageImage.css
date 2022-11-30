@@ -1,0 +1,44 @@
+.listing-page-image {
+  grid-area: 2/2 / span 2 / span 3;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.listing-page-image-out {
+  grid-area: 2/2 / span 2 / span 3;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  opacity: 0.5;
+}
+
+.add-badge {
+  grid-area: 3/3 / span 2 / span 1;
+  background-color: var(--green);
+  border-radius: 50px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  justify-self: center;
+  cursor: grab;
+  z-index: 2;
+}
+
+.add-badge:hover {
+  background-color: green;
+}
+
+.lp-outofstock-sign {
+  grid-area: 2/2 / span 2 / span 3;
+  justify-self: center;
+  color: #8d8f9a;
+  font-weight: normal;
+  font-size: 24px;
+  z-index: 2;
+}

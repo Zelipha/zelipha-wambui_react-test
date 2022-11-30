@@ -1,0 +1,76 @@
+.product-details {
+  width: 292px;
+  height: 511px;
+  text-align: left;
+  margin-left: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-brand {
+  margin: 0;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.product-name {
+  margin: 0;
+  margin-top: 16px;
+  font-weight: normal;
+  font-size: 30px;
+}
+
+.product-price-title {
+  margin: 0;
+  margin-top: 40px;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.product-price-amount {
+  margin: 0;
+  margin-top: 10px;
+  line-height: 46px;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.product-details .add-button,
+.disabled-button {
+  margin-top: 20px;
+  width: 100%;
+  height: 52px;
+  color: var(--white);
+  border: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.product-details .add-button {
+  background-color: var(--green);
+  cursor: pointer;
+}
+
+.product-details .add-button:hover {
+  background-color: green;
+}
+
+.product-details .disabled-button {
+  background-color: rgba(57, 55, 72, 0.22);
+  cursor: not-allowed;
+}
+
+.product-details .disabled-button:hover {
+  background-color: red;
+}
+
+.product-description {
+  margin-top: 40px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+}

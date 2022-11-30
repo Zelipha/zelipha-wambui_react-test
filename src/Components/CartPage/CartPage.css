@@ -1,0 +1,23 @@
+.cart-page {
+  position: relative;
+  top: 80px;
+  width: 1097px;
+  padding-left: 5%;
+  padding-bottom: 5%;
+}
+
+.cart-page-header {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  margin-top: 80px;
+  margin-bottom: 59px;
+  line-height: 40px;
+}
+
+.cart-product {
+  display: grid;
+  grid-template-columns: 50% 23% 7% 20%;
+  border-top: #e5e5e5 solid 1px;
+  padding-block: 20px;
+}

@@ -1,0 +1,9 @@
+.description-page {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 96px;
+  padding-bottom: 280px;
+  position: relative;
+  top: 160px;
+}

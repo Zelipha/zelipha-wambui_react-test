@@ -1,0 +1,25 @@
+.listing-page-details {
+  grid-area: 5/2 / span 1 / span 3;
+  align-self: flex-start;
+}
+
+.listing-page-details-out {
+  grid-area: 5/2 / span 1 / span 3;
+  align-self: flex-start;
+  opacity: 0.5;
+}
+
+.listing-page-product p {
+  width: 356px;
+  margin: 0;
+  font-size: 18px;
+  line-height: 29px;
+}
+
+.listing-page-name {
+  font-weight: 300;
+}
+
+.listing-page-price {
+  font-weight: 500;
+}

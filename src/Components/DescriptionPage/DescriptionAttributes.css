@@ -1,0 +1,13 @@
+.product-attributes {
+  display: flex;
+  column-gap: 12px;
+}
+
+.attribute-name {
+  margin: 0;
+  margin-top: 43px;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: "Roboto Condensed", sans-serif;
+}

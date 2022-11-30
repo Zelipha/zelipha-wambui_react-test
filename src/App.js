@@ -1,25 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import { ContextProvider } from "./Context";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import WelcomePage from "./Components/WelcomePage/WelcomePage";
+import Navbar from "./Components/Navbar/Navbar";
+import ListingPage from "./Components/ListingPage/ListingPage";
+import DescriptionPage from "./Components/DescriptionPage/DescriptionPage";
+import CartPage from "./Components/CartPage/CartPage";
+import ErrorPage from "./Components/ErrorPage/ErrorPage";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export class App extends Component {
+  render() {
+    return (
+      <ContextProvider>
+        <Router>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<WelcomePage />} />
+            <Route exact path="/404" component={ErrorPage} />
+            <Route exact path="/cart" element={<CartPage />} />
+            <Route
+              exact
+              path="/:category"
+              render={({
+                match: {
+                  params: { category },
+                },
+              }) => <ListingPage category={category} />}
+            ></Route>
+            <Route
+              exact
+              path="/:category/:id"
+              render={({
+                match: {
+                  params: { id },
+                },
+              }) => <DescriptionPage id={id} />}
+            ></Route>
+            <Route path="*" element={<ErrorPage />} />
+          </Routes>
+        </Router>
+      </ContextProvider>
+    );
+  }
 }
 
 export default App;

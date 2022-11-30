@@ -1,0 +1,47 @@
+.icon-container {
+  grid-area: 1/6 / span 1 / span 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.currency-icon-container {
+  display: flex;
+  column-gap: 10px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 40%;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.cart-icon-container {
+  cursor: pointer;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template: 1fr 1fr/1fr 1fr;
+  width: 36%;
+}
+
+.cart-icon {
+  margin-top: 7%;
+  grid-area: 1/1 / span 2 / span 2;
+  justify-self: center;
+  align-self: center;
+}
+
+.cart-item-counter {
+  grid-area: 1/2 / span 1 / span 1;
+  background-color: var(--black);
+  border-radius: 50px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  color: var(--white);
+  font-weight: bold;
+  font-size: 14px;
+}

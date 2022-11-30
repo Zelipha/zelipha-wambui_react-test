@@ -1,0 +1,34 @@
+.minicart {
+  width: 325px;
+  height: 540px;
+  top: 78px;
+  background-color: var(--white);
+  position: fixed;
+  right: 6%;
+  z-index: 12;
+  padding-inline: 16px;
+  box-sizing: border-box;
+}
+
+.minicart-focus {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(57, 55, 72, 0.22);
+  position: fixed;
+  z-index: 9;
+}
+
+.minicart-head {
+  display: flex;
+  height: 10%;
+  align-items: center;
+  font-size: 16px;
+}
+
+.minicart-head span {
+  font-weight: 500;
+}
+
+.minicart-head .my-bag {
+  font-weight: 700;
+}

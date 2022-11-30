@@ -1,0 +1,20 @@
+.minicart-list {
+  overflow-y: scroll;
+  overflow: overlay;
+  height: 62%;
+}
+
+.minicart-product {
+  display: grid;
+  grid-template-columns: 48% 12% 40%;
+  padding-block: 20px;
+}
+
+.minicart-image {
+  width: 100%;
+  height: 137px;
+  object-fit: contain;
+  align-self: center;
+  justify-self: center;
+  z-index: -1;
+}
